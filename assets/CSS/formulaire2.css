@@ -1,0 +1,288 @@
+
+.titre{
+    color: #0365ae;
+    margin-top: 20vh;
+    margin-left: 25%;
+    margin-bottom: 5vh;
+    font-size: 20px;
+}
+.titre:hover{
+    color:#419702;
+}
+
+/* 1ère section formulaire à cocher */
+
+#top{ 
+    padding: 2em;
+    width: 25%;
+    height: 30vh;
+    /* margin-right: 10%; */
+    margin-bottom:10vh;
+    border: solid #0365ae 2px;
+}
+.fc{
+    color: red;
+    margin-left:0;
+    width: 80%;
+
+}
+.case{
+    width:40px;
+    }
+
+
+/*2ème formulaire*/
+ #form2{
+    border: solid #0365ae 2px;
+    width: 60%;
+    height: 82vh;
+} 
+.titre2{
+    margin-left: 40%;
+}
+.titre2:hover{
+    color:red;
+}
+.inp, .inp4 {
+    height: 4vh;
+    width: 15vw;
+    margin-left: 80%;
+    margin-top: 0;
+}
+.inp4{
+     margin-left: 67%;
+     color: rgb(29, 28, 26);
+}
+.lab{
+    margin-left: 40%;
+    margin-top: 1em;
+}
+/* formulaire 3 */
+.conteneur1{
+    width: 70%;
+    margin-left: 0;
+}
+
+/* formulaire 3 */
+.titre3:hover{
+    color:red;
+}
+.formulaire3{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+  }
+.ligne{
+    width: 100%;
+    display: flex; 
+  }
+.cotisation, .prix {
+    padding: 1%;
+    width: 30%; 
+} 
+/* input checkbox */
+.carre, .car{
+   margin-top: 5px;
+   width: 20px;
+   height: 20px;
+}
+    
+.cotisation{
+    width: 60%;
+    padding: 1%;
+}
+/* dernier formulaire pour paiement */
+.paiement{
+    padding: 1em;
+    margin-top: 3vh;
+    margin-left: 30%;
+    margin-bottom: 5vh;
+    width: 30%;
+    height: 25vh;
+    border: solid #0365ae 2px;
+}
+
+.payer{
+    margin-left: 2vw;
+    width:100%;
+}
+/*placement des inputs submit*/
+.env, .envoyer, .envoyer1, .envoyer2, .envoyer3{
+    width:80px;
+    height: 30px;
+    background-color: #419702;
+}
+.envoyer1{
+    margin-left: 40%;
+    margin-top: 2em;
+}
+
+.envoyer1:hover{
+    background-color:  #45a049;
+    color:#f1f1f1;
+    
+
+}
+.envoyer2{
+    margin-top: 0;
+    margin-left: 15%;
+}
+.envoyer2:hover{
+    background-color: #45a049;
+    color:#f1f1f1;
+
+}
+ .env{
+    margin-left: 30%;
+    margin-top: 2vh;
+} 
+.env:hover{
+    background-color: #419702;
+    color:#f1f1f1;
+}
+.envoyer{
+    margin-left: 45%;
+}
+
+.envoyer:hover{
+    background-color: #419702;
+    color:#f1f1f1;
+}
+.envoyer2{
+    margin-top: 12%;
+    margin-left: 1vw;
+    width: 6vw;
+}
+.envoyer2:hover{
+    background-color: #419702;
+    color: #f1f1f1;
+}
+.envoyer3{
+    margin-top: 1vh;
+    margin-left: 40%;
+}
+.envoyer3:hover{
+    background-color: #419702;
+    color:#f1f1f1;
+}
+
+/* dernier formulaire */
+.col1, .col2, .col3, .col4{
+    display: flex;
+    flex-direction: column;
+    width: 25%; 
+    
+}
+.conteneur input{
+    height: 2em;
+}
+
+.conteneur{
+    border: solid #0365ae 2px;
+    width: 80%;
+    height: 50vh;
+    display: flex;  
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    padding: 1em;
+
+}
+
+.t1, .t2{
+    margin-left: 26%;
+}
+.t4, .t3{
+    margin-left: 10%;
+}
+.t1, .t2, .t3, .t4{
+    height: 10vh;
+    font-size: 20px;
+  
+}
+
+/* partie pdf */
+.doc > p{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+.pdf{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 720px) {
+    .titre{
+        margin-left: 5%;
+        margin-top: 10vh;
+        font-size: 20px;
+        text-align: center;
+    }
+    #top{
+    
+        height:25vh;
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 40px;
+        font-size: 10px;
+    }
+    .fc{
+        margin-right: 10%;
+        margin-bottom: 5px;
+    }
+    .env{
+        margin-left:30%;
+    }
+    .envoyer1{
+        margin-left: 50%;
+    }
+    .envoyer3{
+        margin-top: 2vw;
+    }
+    .envoyer2{
+        margin-top:30%;
+        margin-left:2%;
+        width: 10vw;
+        
+    }
+    .t1, .t2, .t3, .t4{
+        height: 8vh;
+        font-size: 10px;
+      
+    }
+    .t3 > p{
+        font-size: 8px;
+    }
+    #form2{
+        border: solid black 2px;
+        width: 70%;
+        height: 80vh;
+        font-size: 12px;
+    } 
+    .titre2{
+        font-size: 15px;
+    }
+    .lab{
+        margin-left: 10%;
+        margin-top: 1em;
+    }
+    .inp{
+        margin-left:70%;
+    }
+    .conteneur{
+        height: 40vh;;
+    }
+    .paiement{
+        margin-top: 3vh;
+        margin-left: 20%;
+        margin-bottom: 5vh;
+        width: 55%;
+        height: 35vh;
+        border: solid black 2px;
+    }
+
+    
+}

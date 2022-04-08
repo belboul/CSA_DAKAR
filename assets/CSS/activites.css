@@ -1,0 +1,181 @@
+    
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f1f1f1;
+}
+  section img{
+      padding-left:40%;
+  }
+  #titre1{
+      margin-top: 15vh;
+      /* margin-bottom: 20px; */
+      color:#0365ae;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      text-shadow: -3px 3px 2px #2e365c;
+  }
+  #titre2{
+    margin-top: 2vh;
+     color:#0365ae;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+
+  }
+.center{
+  display: flex;
+  justify-content: center;
+  }
+.début{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-style: italic;
+  font-size: 20px;
+}
+.titre3{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+#liste{
+  background: #f1f1f1;
+  color:#f1f1f1;
+  font-family: arial, sans serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+ol{
+  list-style: none;
+  /* width: 300px; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+ol li {
+  font-size: 1.2rem;
+  background: rgb(23, 23,23);
+  margin: 10px 0;
+  padding:20px 30px;
+  cursor: pointer;
+  position: relative;
+  transition: all.4s;
+  z-index: 5;
+  width: 25%;
+  margin-left: 5%;
+}
+ol li::before {
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 5px;
+  background: #419702;
+  transition: all.4s;
+  z-index: -1;
+}
+ol li:hover::before{
+ width: 100%;
+}
+ol li:nth-child(2n-1)::before{
+  background:#0365ae;
+}
+ol li:nth-child(2)::before{
+  background:#419702;
+}
+
+ol li:hover{
+  transform: translateX(20px);
+}
+
+@media only screen and (max-width: 720px) {
+    #titre1{
+        margin-top: 15vh;
+        font-size: 30px;
+        margin-left: 9vw;
+        text-align: center;
+        text-shadow: -2px 2px 1px #2e365c;
+    }
+    #titre2{
+      margin-top: 1vh;
+      font-size: 30px;
+    }
+    .debut{
+      font-size: 10px;
+      text-align: justify;
+    }
+    .titre3{
+      font-size: 20px;
+    }
+    ol{
+      width:90%
+    }
+    ol li{
+      width: 25%;
+      font-size: 10px;
+      text-align: center;
+    } 
+    .d1{
+      max-width: 400px;
+      object-position: center;
+      margin:auto;
+     
+    }
+    .d2{
+      max-width: 400px;
+      object-position: center;
+      margin:auto;
+    }
+  }
+/******* diaporama d'images effet fondu  *******/
+
+.d1{
+  width: 576px;
+  height: 432px;
+  margin: 50px auto;
+  box-shadow: 0px 15px 10px -5px #0365ae;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+} 
+.conteneur2{
+  max-width: 576px;
+  margin: 50px auto;
+}
+.d2{
+  width: 100%;
+  height: 0px;
+  padding-top: 75%;
+  box-shadow: 0px 15px 10px -5px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo 8s ease-in-out infinite both;
+}
+.conteneur1{
+  background-color: #EDEDED;
+  max-width: 576px;
+  margin: 50px auto;
+}
+.d1:hover, .d2:hover{
+  animation-play-state: paused;
+}
+@keyframes diapo{
+  0%{background-image: url("/assets/images/img/foot_fille2.jpg");}
+  33.33%{background-image: url("/assets/images/img/judo1.jpg");}
+  66.67%{background-image: url("/assets/images/img/section_equestre.jpg");}
+  100%{background-image: url("/assets/images/img/foot.jpg");}
+}
+@keyframes fondu{
+  0%{background-image: url("/assets/images/img/humanitaire.PNG");}
+  33.33%{background-image: url("/assets/images/img/musique.PNG");}
+  66.67%{background-image: url("/assets/images/img/cross.PNG");}
+  100%{background-image: url("/assets/images/img/paddle.PNG");}
+} 

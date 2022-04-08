@@ -1,0 +1,376 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+
+.dakar{
+  height: 60vh;
+  width: 100%;
+  background-image: url(../images/img/Dakar.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.titre{
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.titre:hover{
+  color:#0365ae;
+}
+.titre2{
+  color:#0365ae;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  /* white-space:nowrap; */
+  text-shadow: -3px 3px 2px #2e365c;
+  justify-content: center;
+}
+.location{
+  margin-left: 45%;
+  margin-top: 10px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+  position: relative;
+  height: 100%;
+}
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.mySlides .text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(31, 28, 28, 0.4);
+}
+.mySlides.active {
+  display: block;
+}
+/* flèches de direction avant après */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(30, 119, 155);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position de "next button" à la droite */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* En survol, j'ajoute la couleur noire de l'arrière-plan avec un peu see-through */
+.prev:hover,
+.next:hover {
+  background-color: #686464;
+}
+/* Caption */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #312e2e;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+/* section contact réservation */
+.res {
+  border: solid 4px #0365ae;
+  width: 20vw;
+  height: 18vh;
+  font-size: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 40%;
+  animation: res ease 10s;
+  }
+
+@keyframes res{
+  0% {
+    opacity:0;
+    transform:translateX(0px);
+}
+25%{
+   transform:translateX(600px);
+   opacity:0,5;
+}
+50% {
+    transform:translateX(0px);
+    opacity:1;
+}
+75% {
+    opacity:1;
+    transform: translateX(-600px);
+}
+100% {
+  transform:translateX(0px);
+  opacity:1;
+
+}
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* class pour lien */
+.neon{
+  width: 20vw;
+  position: relative;
+  padding: 25px 30px;
+  margin: 40px 0; color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s; 
+  letter-spacing: 4px;
+  overflow: hidden; 
+  
+}
+/* changement de couleur au passage de la souris */
+.neon:hover{
+  background: red; color: #050801;
+}
+.neon  span{
+  margin-left: 40%;
+  width: 20vw;
+  position: absolute;
+  display: block;
+}
+/* classer les points par ordre d'apparition du néon */
+.neon span:nth-child(1){
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg,transparent,red);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+.neon span:nth-child(2){
+  top: -100%; right: 0;
+  width: 2px; height: 100%;
+  background: linear-gradient(180deg,transparent,red);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+/* animation keyframes */
+@keyframes animate2{
+  0%{ top: -100%; }
+  50%,100%{ top: 100%; }
+}
+.neon span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,red);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+.neon span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,red);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+
+}
+.condition {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2vw;
+  font-size: 10px;
+}
+/*table*/
+table, td,th {
+  border: 2px solid #45a049;
+  border-collapse: collapse;
+}
+table{
+  margin-top: 7vh;
+  width:45%;
+  height: 30vh;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+table p{
+  display: flex;
+  justify-content: center;
+}
+th{
+  color: #0365ae;
+}
+td{ 
+    font-size: 15px;
+    width: 15%;
+}
+.tête{
+  background-color: #0365ae;
+  color: #f1f1f1;
+  margin-left: 20px;
+}
+.moto1{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  /* width: 45%; */
+  height: 50vh;
+  /* margin-left: 2%; */
+  box-shadow: 5px 5px 5px 5px #0365ae;
+}
+  /* padding-right: 20px; */
+
+
+.moto1 > img{
+  width: 100%;
+}
+
+#suzuki{
+  padding:2%;
+  display: flex;
+  justify-content: space-around;
+
+}
+/* flex-wrap: wrap; */
+.dispo{
+  display: flex;
+  justify-content: center;
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 720px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;  
+  }
+  .neon{ 
+    display: none;
+  }
+  .res{
+    width: 62%;
+    height: 18vh;
+    margin-left: 25%;
+  }
+  .location{
+    margin-left: 25%;
+  }
+  .titre2{
+    font-size: 30px;
+  }
+
+ .dispo{
+    margin:10px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  #suzuki{
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+ }
+ .moto1{
+    margin-left: 5%;
+ }
+ .moto > img{
+    width:100%;
+ }
+}

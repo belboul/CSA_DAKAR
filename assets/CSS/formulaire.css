@@ -1,0 +1,207 @@
+/* titre */
+h1{
+    margin-left: 22%;
+    margin-bottom: 5vh;
+}
+.titre{
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+/* 1ère section formulaire à cocher */
+
+#top{ 
+    width: 25%;
+    height: 23vh;
+    /* margin-right: 10%; */
+    margin-bottom:10vh;
+    border: solid black 2px;
+}
+.fc{
+    color: red;
+    margin-left:0;
+    width: 80%;
+    /* background-color: aqua;
+    display: flex;
+    justify-content: space-between; */
+}
+.case{
+    width:40px;
+    }
+    /*tableaux*/
+
+.table1, .table2, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+  table2 > td {
+      width: 30px;
+  }
+    th{
+    color: #f1f1f1;
+    background-color: #0365ae ;
+    width: 30%;
+    height: 30px;
+  }
+  td{ 
+     width: 60%;
+  }
+  .vv{
+      background-color: #0365ae ;
+      color: #f1f1f1;
+  }
+ /*1er tableau*/
+.table1{
+    margin-top: 5vh;
+    margin-left: 23%;
+  }
+
+#section, #efs, #ext, #hand, #paie{
+    width: 20px;
+    height: 20px;
+  }
+  /** formulaire 2 **/
+.formulaire2{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+  }
+.ligne{
+    width: 100%;
+    display: flex; 
+  }
+.cotisation, .prix {
+    padding: 1%;
+    width: 30%; 
+} 
+.carre{
+   margin-top: 5px;
+   width: 20px;
+   height: 20px;
+}
+.car {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}  
+    
+.cotisation{
+    width: 60%;
+    padding: 1%;
+}
+.table2{
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 50px;
+  
+}
+.table2 td{
+    width:25%;
+}
+.table2 input{
+    width: 90%;
+}
+ p{
+    display: flex;
+    justify-content: center;
+}
+.paiement{
+    margin-top: 3vh;
+    margin-left: 40%;
+    margin-bottom: 5vh;
+    width: 40%;
+    height: 30vh;
+    border: solid black 2px;
+}
+.payer{
+    width:100%;
+}
+/*placement des inputs submit*/
+.env, .envoyer, .envoyer1, .envoyer2, .envoyer3{
+    width:80px;
+    height: 30px;
+    background-color: #04AA6D;
+}
+.envoyer1{
+    margin-left: 23%;  
+}
+.envoyer1:hover{
+    background-color: #45a049;
+}
+.envoyer2{
+    margin-left: 15%;
+}
+.envoyer2:hover{
+    background-color: #45a049;
+}
+.env{
+    margin-left: 30%;
+    margin-top: 5vh;
+}
+.env:hover{
+    background-color: #45a049;
+}
+
+.envoyer:hover{
+    background-color: #45a049;
+}
+.envoyer3:hover{
+    background-color: #45a049;
+}
+.pdf{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+    .titre{
+        margin-left: 5%;
+        margin-top: 10vh;
+        font-size: 20px;
+        text-align: center;
+    }
+    #top{
+        width: 60%;
+        margin-left: 30%;
+        margin-bottom: 40px;
+        font-size: 13px;
+    }
+    .fc{
+        margin-right: 20%;
+        margin-bottom: 5px;
+    }
+
+    .table1{
+      margin-top: 10vh;
+      margin-left: 5%;
+      margin-right: 5%;  
+    }
+    .table2{
+      width:90%;
+      margin-left:5%;
+    }
+    .paiement{
+        margin-left: 5%;
+    }
+    .env{
+        margin-left:0;
+    }
+    .envoyer1{
+        margin-left: 5%;
+    }
+    .envoyer3{
+        margin-top: 2vw;
+    }
+    .envoyer2{
+        margin-left:5%;
+    }
+    .paiement{
+        margin-top: 3vh;
+        margin-left: 30%;
+        margin-bottom: 5vh;
+        width: 55%;
+        height: 32vh;
+        border: solid black 2px;
+    }
+    }

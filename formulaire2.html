@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="/assets/icofont/icofont.min.css">
+   <link rel="stylesheet" href="./assets/CSS/fixe.css">
+    <link rel="stylesheet" href="./assets/CSS/formulaire2.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+          <a href="index.html"><img class="logo" src="./assets/images/icônes/Logo-CSA-Dakar-PNG.png"><strong>CSA-DAKAR</strong></a>
+            
+         
+        <ul class="navigation">
+        
+        <li><a href="index.html" class="nav-link">Accueil<i class="icofont-home"></i></a></li>
+        <li><a href="activites.html" class="nav-link">Activités<i class="icofont-runner"></i></a></li>
+        <li><a href="formulaire.html" class="nav-link">Inscription<i class="icofont-pen-alt-2"></i></a></li>
+        <li><a href="location.html" class="nav-link">Location<i class="icofont-car"></i></a></li>
+        <li><a href="contact.html" class="nav-link">Contact<i class="icofont-user-alt-2"></i></a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"><i class="icofont-navigation-menu"></i></ion-icon>
+            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+          </button>   
+        </nav>
+</header>
+
+<section class="titre">
+  <h1><img class="logo" src="./assets/images/icônes/Logo-CSA-Dakar-PNG.png">
+           CSA-DAKAR / Formulaire d'adhésion 2021/2022
+  <img class="logo" src="./assets/images/icônes/Logo-CSA-Dakar-PNG.png">
+  </h1>
+</section>
+  <!-- 1er formulaire -->
+<section id="top">
+  <form action="">
+<div class="left">
+  <input class="carre" type="checkbox" id="efs" name="efs" value="efs" checked>
+  <label for="efs">EFS</label>
+  <input class="carre" class="case" type="checkbox" id="efs" name="efs" value="efs" checked>
+  <label class="ext1" for="ext">EXTERIEUR</label>
+</div>
+<div class="right">
+  <input class="carre" type="checkbox" id="section" name="section" value="section" checked>
+  <label for="section">AJOUT de SECTION</label>
+  <input class="carre" type="checkbox" id="ext" name="efs" value="ext" checked>
+  <label for="efs">CHEF DE SECTION</label>
+</div>
+<p class="fc">FC N°: <input type="text" name="nom"/>
+  <input class="carre" type="checkbox" id="ext" name="efs" value="ext" checked>
+</p>
+<input class="env" type="submit" value="Envoyer">
+</form>
+
+</section>
+<!-- 2ème formulaire -->
+
+<body>
+<section id="form2">
+    <form class="formulaire2">
+          <h2 class="titre2"><strong>RENSEIGNEMENTS</strong></h2>
+          <div class="conteneur1">
+            <div>
+                <label class="lab" for="name">Nom</label>
+                <input class="inp" type="text" name="nom"/>
+            </div>
+            <div>
+                <label class="lab" for="fname">Prénom</label>
+                <input class="inp" type="text" name="prenom"/>
+            </div> 
+            <div>
+                <label class="lab" for="grade">Grade</label>
+                <input class="inp" type="text" name="grade"/>
+            </div>
+            <div>
+                <label class="lab" for="birth">Date de naissance</label>
+                <input class="inp" type="text" name="birth"/>
+            </div> 
+            <div>
+                <label class="lab" for="lieu">Lieu de naissance</label><br>
+                <input class="inp" type="text" name="lieu"/>
+            </div>   
+            <div class="lab">
+                sexe <select id="sujet" name="sujet">
+                    <option value="homme">Homme</option>
+                    <option value="femme">femme</option>
+            </div>
+            <div>
+                <label class="lab" for="tel">Tel.port/Whatsapp</label>
+                <input class="inp4" type="text" name="tel"/>
+
+            </div>
+            <div>
+                <label class="lab" for="natio">Courriel perso</label>
+                <input class="inp" type="text" name="courriel"/>
+            </div>
+            <div>
+                <label class="lab" for="natio">Nationalité</label>
+                <input class="inp" type="text" name="natio"/>
+            </div>
+            <div>
+                <label class="lab" for="handicap">Situation de handicap</label>
+                <input class="carre" id="hand" type="checkbox" cols="1">
+            </div>
+            <input class="envoyer1" type="submit" value="Valider"/>
+        </div>
+    </form>
+</section>
+<!-- 3ème formulaire -->
+<div class="formulaire3">
+    <h3 class="titre3">COTISATION CSA (licence)</h3>
+    <fieldset>
+      <legend>Veuillez sélectionner votre situation</legend>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="efs" name="situation" value="efs" checked>
+        <label class="cotisation" for="militaire">MILITAIRE EFS </label> 
+       
+        <div class="prix"> 25 000 FCFA</div>
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="civil" name="situation" value="civil">
+        <label class="cotisation" for="music">CIVIL MINARM OU PRL</label>
+        <div class="prix"> 25 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="famille" name="situation" value="famille">
+        <label class="cotisation" for="music">FAMILLE DE MILITAIRE OU CIVIL MINARM</label>
+        <div class="prix"> 25 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="coop" name="situation" value="coop">
+        <label class="cotisation" for="music">COOPERANT</label>
+        <div class="prix"> 25 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="fam" name="situation" value="fam">
+        <label class="cotisation" for="music">FAMILLE DE COOPERANTS</label>
+        <div class="prix"> 25 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="citoyen" name="situation" value="citoyen">
+        <label class="cotisation" for="music">RESERVISTE OPERATIONNEL OU CITOYEN</label>
+        <div class="prix"> 25 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="mcd" name="situation" value="mcd">
+        <label class="cotisation" for="music">MEMBRE DE DROIT MCD (moins de 6 mois</label>
+        <div class="prix"> 15 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="enfant" name="situation" value="enfant">
+        <label class="cotisation" for="music">ENFANT EFS (moins de 12 ans)</label>
+        <div class="prix"> 20 000 FCFA</div>
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="exte" name="situation" value="exte">
+        <label class="cotisation" for="music">EXTERIEUR (ADULTE/ENFANT)</label>
+        <div id="prix2" class="prix"> 45 000 FCFA (01/09/2021)</div>
+        <div id="prix2" class="prix"> 35 000 FCFA (01/02/2022)</div>
+    
+    
+      </div>
+      <div class="ligne">
+        <input class="carre" type="checkbox" id="decouv" name="situation" value="decouv">
+        <label class="cotisation" for="music">INSCRIPTION DECOUVERTE (maximum 72h)</label>
+        <div class="prix"> 5 000 FCFA</div>
+    
+      </div>
+    </fieldset>
+    <input class="envoyer" type="submit" value="Valider"/>
+    <form>
+    </div>
+<!-- 4ème formulaire -->
+<section id="dernier">
+<form>
+    <div class="conteneur">
+        <div class="col1">  
+           <label  class="t1" type="text"><strong>ACTIVITE</strong></label>
+           <input type="text" name="activite1"/>
+           <input type="text" name="activité2"/>
+           <input type="text" name="activite3"/>
+           <input type="text" name="activite4"/>
+           <input type="text" name="activite5"/>
+           <input type="text" name="activité6"/>
+           <input type="text" name="activite7"/>
+           <input type="text" name="activite8"/>
+
+        </div> 
+        <div class="col2">  
+            <label class="t2" type="text"><strong>TARIF</strong></label>
+            <input type="text" name="tarif1"/>
+            <input type="text" name="tarif2"/>
+            <input type="text" name="tarif3"/>
+            <input type="text" name="tarif4"/>
+            <input type="text" name="tarif5"/>
+            <input type="text" name="tarif6"/>
+            <input type="text" name="tarif7"/>
+            <input type="text" name="tarif8"/>
+         </div> 
+         <div class="col3">  
+            <label class="t3" type="text"><strong>NOM DU PARRAIN</strong><br>
+                <p>(pour les extérieurs)</p></label>
+            <input type="text" name="nom1"/>
+            <input type="text" name="nom2"/>
+            <input type="text" name="nom3"/>
+            <input type="text" name="nom4"/>
+            <input type="text" name="nom5"/>
+            <input type="text" name="nom6"/>
+            <input type="text" name="nom7"/>
+            <input type="text" name="nom8"/>
+         </div> 
+         <div class="col4">  
+            <label class="t4" type="text"><strong>SIGNATURE CHEF DE SECTION</strong></label>
+            <input type="text" name="signature1"/>
+            <input type="text" name="signature2"/>
+            <input type="text" name="signature3"/>
+            <input type="text" name="signature4"/>
+            <input type="text" name="signature5"/>
+            <input type="text" name="signature6"/>
+            <input type="text" name="signature7"/>
+            <input type="text" name="signature8"/>
+         </div> 
+         <input class="envoyer2" type="submit" value="Valider"/> 
+    </div>
+       
+ </form>
+</section>
+<!-- dernier formulaire -->
+<div class="paiement">
+    <form method="post" action="page2.php">
+    <div class="payer">
+      <label for="totalA">Total activités</label>
+      <input type="text" id="totalA" name="totalA"> FCFA<br>
+    </div>
+    <div class="payer">
+      <label for="total">Total Licence + activités</label>
+      <input type="text" id="total" name="total"> FCFA<br>
+    </div> 
+    <div class="payer">
+      <input class="carre" id="paie" type="checkbox" id="espece" name="payer" value="espece">
+      <label for="espece">Paiement en espèces</label><br>
+    </div>
+    <div class="payer">
+      <label for="cheque">Par chèque n°</label>
+      <input type="text" id="cheque" name="cheque"> <br>
+    </div>
+    <div class="payer">
+      <label for="bank">Banque</label>
+      <input type="text" id="bank" name="bank">
+    </div>
+    <input class="envoyer3" type="submit" value="Valider"/> 
+</form>
+
+</div>
+
+<div class="socials">
+        
+<a href="https://www.facebook.com/CSA-Dakar-106732311654679" target="_blank" ><img
+src="./assets/images/icônes/facebook-circled.png "
+alt="facebook"
+loading="lazy"
+class="socicon"/></a>
+<a href="contact.html" target="_blank" ><img
+src="assets/images/icônes/gmail-new.png"
+alt="gmail"
+loading="lazy"
+class="socicon"/></a>
+</div>
+<!-- scroll vers le haut -->
+<i class="scroll-up" id="scroll-up"><img
+    src="assets/images/icônes/up-arrow-emoji.png"
+    class="socicon up-arrow"
+    alt=""/></i>
+
+
+<div class="doc">
+<p>Vous trouverez ci-joint les documents PDF à télécharger:</p>
+<ul class="pdf">
+  <li><a href="./pièces_jointes/Fiche d'inscription 2021-2022 (1).pdf" download="Formulaire_Inscription">Le formulaire d'inscription<img src="https://img.icons8.com/color/48/000000/pdf-2--v1.png"/></a></li>
+  <li><a href="./assets/images/img/sante.jpg" download="Formulaire_santé">Le formulaire état de santé<img src="https://img.icons8.com/color/48/000000/pdf-2--v1.png"/></a></li>
+
+</ul>
+</div>
+<footer>
+<P><i class="icofont-copyright"></i>Tous droits réservés - 2022<br>
+    réalisé par ONSA BEM<i class="icofont-heart"></i></p>
+</footer>
+
+<script src="index.js"></script>
+
+
+
+
+                   
+</body>
+</html>
